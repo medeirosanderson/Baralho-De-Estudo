@@ -1,0 +1,153 @@
+/*FONTE*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/*RESET CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans" serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(./assets/img/bg1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+position: fixed;
+bottom: 10px;
+right: 10px;
+}
+
+.logo img {
+    width: 130px;
+    opacity: 40%;
+}
+
+.container {
+    width: 360px;
+    background-color: transparent;
+    border: 2px solid rgba(225, 225, 225, .2);
+    border-radius: 10px;
+    padding: 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    backdrop-filter: blur(20px);
+}
+
+.container-conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+
+.container-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0 10px 0;
+}
+
+.button {
+    width: 200px;
+    height: 30px;
+    background-color: #fff;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.button:hover {
+    background-color: #dd4834;
+    border: none;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.button-shape {
+    width: 200px;
+    height: 30px;
+    background-color: #fff;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.button-shape:hover {
+    background-color: #086e61;
+    border: none;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.container h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+}
+
+.container h2 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.container-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 0 0;
+}
+
+.card img {
+    border: none;
+    border-radius: 17px;
+    width: 250px;
+    height: 320px;
+    padding: 10px 0 0 0;
+}
+
+.button-card {
+    display: flex;
+    justify-content: center;
+}
+
+.button-card button {
+    color: #000;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.button-card button:hover {
+    background-color: #086e61;
+    border:  1px solid rgba(225, 225, 225, .2);
+    color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.oculto {
+    display: none;
+}

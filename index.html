@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+    <link rel="stylesheet" href="style.css">
+    <title>Baralho Musical</title>
+</head>
+<body>
+    <div class="logo">
+        <a href="">
+            <img src="./assets/img/logo.png" alt=""/>
+        </a>
+    </div>
+    <div class="container">
+        <div class="container-conteudo">
+            <div class="container-text">
+                <h1>Baralho Musical</h1>
+                <h2>Aperte para escolher o tom da Escala e o Shape</h2>
+            </div>
+            <div class="container-button">
+                <button id=mostrarNotasBtn onclick="mostrarNotaAleatoria()" class="button">Escala</button>
+            </div>
+            <div class="container-button">
+                <button id=mostrarShape onclick="mostrarShapeAleatorio()" class="button-shape">Shape</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-cards">
+        <div class="cards">
+            <div class="card">
+                <img id="1" src="./assets/img/notas musicais/1.png" class="oculto" alt="Dó">
+            </div>
+            <div class="card">
+                <img id="2" src="./assets/img/notas musicais/2.png" class="oculto" alt="Ré">
+            </div>
+            <div class="card">
+                <img id="3" src="./assets/img/notas musicais/3.png" class="oculto" alt="Mi">
+            </div>
+            <div class="card">
+                <img id="4" src="./assets/img/notas musicais/4.png" class="oculto" alt="Fá">
+            </div>
+            <div class="card">
+                <img id="5" src="./assets/img/notas musicais/5.png" class="oculto" alt="Sol">
+            </div>
+            <div class="card">
+                <img id="6" src="./assets/img/notas musicais/6.png" class="oculto" alt="Lá">
+            </div>
+            <div class="card">
+                <img id="7" src="./assets/img/notas musicais/7.png" class="oculto" alt="Si">
+            </div>
+            <div class="card">
+                <img id="8"  src="./assets/img/notas musicais/8.png" class="oculto" alt="Dó#">
+            </div>
+            <div class="card">
+                <img id="9"  src="./assets/img/notas musicais/9.png" class="oculto" alt="Ré">
+            </div>
+            <div class="card">
+                <img id="10" src="./assets/img/notas musicais/10.png" class="oculto" alt="Fá#">
+            </div>
+            <div class="card">
+                <img id="11" src="./assets/img/notas musicais/11.png" class="oculto" alt="Sol#">
+            </div>
+            <div class="card">
+                <img  id="12" src="./assets/img/notas musicais/12.png" class="oculto" alt="Lá#">
+            </div>
+            <div class="card">
+                <img  id="13" src="./assets/img/notas musicais/13.png" class="oculto" alt="Sib">
+            </div>
+            <div class="card">
+                <img id="14" src="./assets/img/notas musicais/14.png" class="oculto" alt="Réb">
+            </div>
+            <div class="card">
+                <img id="15" src="./assets/img/notas musicais/15.png" class="oculto" alt="Mib">
+            </div>
+            <div class="card">
+                <img id="16" src="./assets/img/notas musicais/16.png" class="oculto" alt="Solb">
+            </div>
+            <div class="card">
+                <img  id="17" src="./assets/img/notas musicais/17.png" class="oculto" alt="Láb">
+            </div>
+        </div>
+        <div class="container-shapes">
+            <div class="shapes">
+                <img id="shape 1" src="./assets/img/shapes/C SHAPE.png" class="oculto" alt="Shape C">
+            </div>
+            <div class="shapes">
+                <img id="shape 2" src="./assets/img/shapes/A SHAPE.png" class="oculto" alt="Shape A">
+            </div>
+            <div class="shapes">
+                <img id="shape 3" src="./assets/img/shapes/G SHAPE.png" class="oculto" alt="Shape G">
+            </div>
+            <div class="shapes">
+                <img id="shape 4" src="./assets/img/shapes/E SHAPE.png" class="oculto" alt="Shape E">
+            </div>
+            <div class="shapes">
+                <img id="shape 5" src="./assets/img/shapes/D SHAPE.png" class="oculto" alt="Shape D">
+            </div>
+        </div>
+    </div>
+    <div id="voltar" class="button-card">
+        <button onclick="esconderNotas()">voltar</button>
+    </div>
+<script src="app.js"></script>
+<script src="shape.js"></script>
+</body>
+</html>
